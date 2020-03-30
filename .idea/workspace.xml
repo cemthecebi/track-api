@@ -2,38 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="086ac861-7c22-4912-ad79-4f18faee893a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cemthecebi/application/model/mapper/UserRegisterResponseMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cemthecebi/application/model/response/Response.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cemthecebi/application/model/response/UserRegisterResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cemthecebi/domain/model/converter/UserRegisterRequestToUserConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cemthecebi/domain/model/enumtype/Status.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cemthecebi/domain/model/enumtype/ValueEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cemthecebi/TrackApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cemthecebi/TrackApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cemthecebi/application/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cemthecebi/application/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cemthecebi/application/controller/UserRegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cemthecebi/application/model/request/UserRegisterRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cemthecebi/domain/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cemthecebi/domain/model/enumtype/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cemthecebi/domain/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cemthecebi/domain/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cemthecebi/domain/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cemthecebi/domain/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cemthecebi/domain/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cemthecebi/domain/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cemthecebi/infrastructure/security/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cemthecebi/infrastructure/security/JwtTokenProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cemthecebi/infrastructure/security/MyUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cemthecebi/infrastructure/security/MyUserDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cemthecebi/infrastructure/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cemthecebi/infrastructure/security/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/track-api.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cemthecebi/TrackApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cemthecebi/TrackApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cemthecebi/application/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cemthecebi/application/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cemthecebi/application/controller/UserRegisterRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cemthecebi/domain/model/Role.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cemthecebi/domain/model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cemthecebi/domain/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cemthecebi/domain/repository/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cemthecebi/domain/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cemthecebi/domain/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cemthecebi/infrastructure/security/JwtTokenProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cemthecebi/infrastructure/security/JwtTokenProvider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cemthecebi/infrastructure/security/MyUserDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cemthecebi/infrastructure/security/MyUserDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cemthecebi/infrastructure/security/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cemthecebi/infrastructure/security/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/track-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/track-api.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +84,7 @@
       <workItem from="1585503454298" duration="2403000" />
       <workItem from="1585505892977" duration="137000" />
       <workItem from="1585506061365" duration="1041000" />
-      <workItem from="1585580065333" duration="5356000" />
+      <workItem from="1585580065333" duration="5510000" />
     </task>
     <servers />
   </component>
