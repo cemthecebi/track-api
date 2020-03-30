@@ -1,5 +1,8 @@
 package cemthecebi.application.controller;
 
+import cemthecebi.application.model.request.UserRegisterRequest;
+import cemthecebi.application.model.response.Response;
+import cemthecebi.application.model.response.UserRegisterResponse;
 import cemthecebi.domain.service.UserService;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
@@ -14,14 +17,14 @@ public class UserController {
         this.userService = userService;
     }
 
-    @PostMapping("/signin")
+    @PostMapping("/login")
     public String login(@RequestParam(value = "username") String username, @RequestParam(value = "password") String password) {
-        return userService.signin(username, password);
+        return userService.login(username, password);
     }
 
-    @PostMapping("/signup")
-    public String signup(@RequestBody UserRegisterRequest userRegisterRequest) {
-        return userService.signup(userRegisterRequest);
+    @PostMapping("/register")
+    public UserRegisterResponse register(@RequestBody UserRegisterRequest userRegisterRequest) {
+        return userService.register(userRegisterRequest);
     }
 
     @DeleteMapping(value = "/{username}")

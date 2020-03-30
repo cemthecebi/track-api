@@ -1,7 +1,7 @@
 package cemthecebi;
 
-import cemthecebi.application.controller.UserRegisterRequest;
-import cemthecebi.domain.model.Role;
+import cemthecebi.application.model.request.UserRegisterRequest;
+import cemthecebi.domain.model.enumtype.Role;
 import cemthecebi.domain.service.UserService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,21 +31,29 @@ public class TrackApplication implements CommandLineRunner {
 
     @Override
     public void run(String... params) throws Exception {
+
         UserRegisterRequest admin = new UserRegisterRequest();
+        admin.setName("admin");
+        admin.setSurname("admin");
         admin.setUsername("admin");
         admin.setPassword("admin");
         admin.setEmail("admin@email.com");
+        admin.setGsmNumber("0000000000");
+
         admin.setRoles(new ArrayList<Role>(Arrays.asList(Role.ROLE_ADMIN)));
 
-        userService.signup(admin);
+        userService.register(admin);
 
         UserRegisterRequest client = new UserRegisterRequest();
+        client.setName("client");
+        client.setSurname("client");
         client.setUsername("client");
         client.setPassword("client");
         client.setEmail("client@email.com");
+        client.setGsmNumber("0000000001");
         client.setRoles(new ArrayList<Role>(Collections.singletonList(Role.ROLE_CLIENT)));
 
-        userService.signup(client);
+        userService.register(client);
     }
 
 }

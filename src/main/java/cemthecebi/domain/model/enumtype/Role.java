@@ -1,4 +1,4 @@
-package cemthecebi.domain.model;
+package cemthecebi.domain.model.enumtype;
 
 import org.springframework.security.core.GrantedAuthority;
 

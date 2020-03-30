@@ -1,17 +1,17 @@
 package cemthecebi.domain.repository;
 
-import cemthecebi.domain.model.User;
+import cemthecebi.domain.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import javax.transaction.Transactional;
 
 public interface UserRepository extends JpaRepository<User, Integer> {
 
-    boolean existsByUsername(String username);
+    boolean existsByUserName(String username);
 
-    User findByUsername(String username);
+    User findByUserName(String username);
 
     @Transactional
-    void deleteByUsername(String username);
+    void deleteByUserName(String username);
 
 }

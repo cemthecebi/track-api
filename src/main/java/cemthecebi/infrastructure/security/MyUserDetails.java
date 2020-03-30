@@ -6,7 +6,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import cemthecebi.domain.model.User;
+import cemthecebi.domain.entity.User;
 import cemthecebi.domain.repository.UserRepository;
 
 @Service
@@ -17,7 +17,7 @@ public class MyUserDetails implements UserDetailsService {
 
   @Override
   public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-    final User user = userRepository.findByUsername(username);
+    final User user = userRepository.findByUserName(username);
 
     if (user == null) {
       throw new UsernameNotFoundException("User '" + username + "' not found");
