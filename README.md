@@ -1,6 +1,6 @@
 # track-api
 
-## User Login
+## User Register
 
 ### Request
 
