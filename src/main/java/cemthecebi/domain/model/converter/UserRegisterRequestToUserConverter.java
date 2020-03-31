@@ -30,7 +30,7 @@ public class UserRegisterRequestToUserConverter {
         user.setStatus(Status.ACTIVE.name());
         user.setName(userRegisterRequest.getName());
         user.setSurname(userRegisterRequest.getSurname());
-        user.setUserName(userRegisterRequest.getUsername());
+        user.setEmail(userRegisterRequest.getUsername());
         user.setEmail(userRegisterRequest.getEmail());
         user.setPassword(passwordEncoder.encode(userRegisterRequest.getPassword()));
         user.setGsmNumber(userRegisterRequest.getGsmNumber());

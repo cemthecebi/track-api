@@ -30,10 +30,10 @@ public class User {
 
     @Size(min = 4, max = 255, message = "Minimum username length: 4 characters")
     @Column(name = "user_name", unique = true, nullable = false)
-    private String userName;
-
-    @Column(name = "emil", unique = true, nullable = false)
     private String email;
+
+    //@Column(name = "emil", unique = true, nullable = false)
+    //private String email;
 
     @Size(min = 8, message = "Minimum password length: 8 characters")
     @Column(name = "password")
@@ -97,13 +97,6 @@ public class User {
         this.surname = surname;
     }
 
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
 
     public String getEmail() {
         return email;

@@ -2,8 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="086ac861-7c22-4912-ad79-4f18faee893a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cemthecebi/application/model/mapper/UserLoginResponseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cemthecebi/application/model/request/UserLoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cemthecebi/application/model/response/UserLoginResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cemthecebi/application/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cemthecebi/application/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cemthecebi/application/model/mapper/UserRegisterResponseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cemthecebi/application/model/mapper/UserRegisterResponseMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cemthecebi/domain/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cemthecebi/domain/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cemthecebi/domain/model/converter/UserRegisterRequestToUserConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cemthecebi/domain/model/converter/UserRegisterRequestToUserConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cemthecebi/domain/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cemthecebi/domain/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cemthecebi/domain/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cemthecebi/domain/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cemthecebi/infrastructure/security/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cemthecebi/infrastructure/security/JwtTokenProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cemthecebi/infrastructure/security/MyUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cemthecebi/infrastructure/security/MyUserDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cemthecebi/application/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cemthecebi/application/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cemthecebi/domain/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cemthecebi/domain/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cemthecebi/domain/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cemthecebi/domain/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cemthecebi/infrastructure/security/JwtTokenProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cemthecebi/infrastructure/security/JwtTokenProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cemthecebi/infrastructure/security/MyUserDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cemthecebi/infrastructure/security/MyUserDetails.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +74,11 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="cemthecebi.domain.model" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cemthecebi.application.model.mapper" />
+      <recent name="cemthecebi.application.model.response" />
+      <recent name="cemthecebi.application.model.request" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="TrackApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -100,92 +120,89 @@
       <screen x="-273" y="-1057" width="1920" height="1057" />
     </state>
     <state x="446" y="-791" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585505643931" />
-    <state x="500" y="-806" key="#com.intellij.ide.util.MemberChooser" timestamp="1585583798781">
+    <state x="500" y="-806" key="#com.intellij.ide.util.MemberChooser" timestamp="1585666687150">
       <screen x="-273" y="-1057" width="1920" height="1057" />
     </state>
-    <state x="500" y="-806" key="#com.intellij.ide.util.MemberChooser/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585583798781" />
+    <state x="500" y="-806" key="#com.intellij.ide.util.MemberChooser/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585666687150" />
     <state x="475" y="-709" width="423" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1585580283809">
       <screen x="-273" y="-1057" width="1920" height="1057" />
     </state>
     <state x="475" y="-709" width="423" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585580283809" />
-    <state width="820" height="466" key="DebuggerActiveHint" timestamp="1585584477413">
+    <state x="211" y="-1057" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585666634037">
       <screen x="-273" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="820" height="466" key="DebuggerActiveHint/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585584477413" />
-    <state width="1878" height="130" key="GridCell.Tab.0.bottom" timestamp="1585585405767">
+    <state x="211" y="-1057" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585666634037" />
+    <state width="1293" height="466" key="DebuggerActiveHint" timestamp="1585665827914">
       <screen x="-273" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="130" key="GridCell.Tab.0.bottom/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585585405767" />
-    <state width="1878" height="130" key="GridCell.Tab.0.center" timestamp="1585585405767">
+    <state width="1293" height="466" key="DebuggerActiveHint/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585665827914" />
+    <state width="1878" height="254" key="GridCell.Tab.0.bottom" timestamp="1585666726427">
       <screen x="-273" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="130" key="GridCell.Tab.0.center/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585585405767" />
-    <state width="1878" height="130" key="GridCell.Tab.0.left" timestamp="1585585405766">
+    <state width="1878" height="254" key="GridCell.Tab.0.bottom/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585666726427" />
+    <state width="1878" height="254" key="GridCell.Tab.0.center" timestamp="1585666726426">
       <screen x="-273" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="130" key="GridCell.Tab.0.left/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585585405766" />
-    <state width="1878" height="130" key="GridCell.Tab.0.right" timestamp="1585585405767">
+    <state width="1878" height="254" key="GridCell.Tab.0.center/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585666726426" />
+    <state width="1878" height="254" key="GridCell.Tab.0.left" timestamp="1585666726425">
       <screen x="-273" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="130" key="GridCell.Tab.0.right/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585585405767" />
-    <state width="1878" height="130" key="GridCell.Tab.1.bottom" timestamp="1585585405769">
+    <state width="1878" height="254" key="GridCell.Tab.0.left/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585666726425" />
+    <state width="1878" height="254" key="GridCell.Tab.0.right" timestamp="1585666726426">
       <screen x="-273" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="130" key="GridCell.Tab.1.bottom/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585585405769" />
-    <state width="1878" height="130" key="GridCell.Tab.1.center" timestamp="1585585405768">
+    <state width="1878" height="254" key="GridCell.Tab.0.right/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585666726426" />
+    <state width="1878" height="254" key="GridCell.Tab.1.bottom" timestamp="1585666726428">
       <screen x="-273" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="130" key="GridCell.Tab.1.center/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585585405768" />
-    <state width="1878" height="130" key="GridCell.Tab.1.left" timestamp="1585585405768">
+    <state width="1878" height="254" key="GridCell.Tab.1.bottom/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585666726428" />
+    <state width="1878" height="254" key="GridCell.Tab.1.center" timestamp="1585666726428">
       <screen x="-273" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="130" key="GridCell.Tab.1.left/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585585405768" />
-    <state width="1878" height="130" key="GridCell.Tab.1.right" timestamp="1585585405769">
+    <state width="1878" height="254" key="GridCell.Tab.1.center/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585666726428" />
+    <state width="1878" height="254" key="GridCell.Tab.1.left" timestamp="1585666726427">
       <screen x="-273" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="130" key="GridCell.Tab.1.right/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585585405769" />
-    <state width="1878" height="130" key="GridCell.Tab.2.bottom" timestamp="1585585405771">
+    <state width="1878" height="254" key="GridCell.Tab.1.left/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585666726427" />
+    <state width="1878" height="254" key="GridCell.Tab.1.right" timestamp="1585666726428">
       <screen x="-273" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="130" key="GridCell.Tab.2.bottom/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585585405771" />
-    <state width="1878" height="130" key="GridCell.Tab.2.center" timestamp="1585585405770">
+    <state width="1878" height="254" key="GridCell.Tab.1.right/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585666726428" />
+    <state width="1878" height="204" key="GridCell.Tab.2.bottom" timestamp="1585666037565">
       <screen x="-273" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="130" key="GridCell.Tab.2.center/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585585405770" />
-    <state width="1878" height="130" key="GridCell.Tab.2.left" timestamp="1585585405770">
+    <state width="1878" height="204" key="GridCell.Tab.2.bottom/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585666037565" />
+    <state width="1878" height="204" key="GridCell.Tab.2.center" timestamp="1585666037565">
       <screen x="-273" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="130" key="GridCell.Tab.2.left/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585585405770" />
-    <state width="1878" height="130" key="GridCell.Tab.2.right" timestamp="1585585405771">
+    <state width="1878" height="204" key="GridCell.Tab.2.center/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585666037565" />
+    <state width="1878" height="204" key="GridCell.Tab.2.left" timestamp="1585666037564">
       <screen x="-273" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="130" key="GridCell.Tab.2.right/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585585405771" />
+    <state width="1878" height="204" key="GridCell.Tab.2.left/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585666037564" />
+    <state width="1878" height="204" key="GridCell.Tab.2.right" timestamp="1585666037565">
+      <screen x="-273" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="204" key="GridCell.Tab.2.right/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585666037565" />
     <state x="175" y="-947" key="SettingsEditor" timestamp="1585503275327">
       <screen x="-273" y="-1057" width="1920" height="1057" />
     </state>
     <state x="175" y="-947" key="SettingsEditor/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585503275327" />
+    <state width="960" height="456" key="XDebugger.FullValuePopup" timestamp="1585665058158">
+      <screen x="-273" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="960" height="456" key="XDebugger.FullValuePopup/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585665058158" />
     <state x="380" y="-769" key="com.intellij.ide.util.TipDialog" timestamp="1585506065977">
       <screen x="-273" y="-1057" width="1920" height="1057" />
     </state>
     <state x="380" y="-769" key="com.intellij.ide.util.TipDialog/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585506065977" />
-    <state x="367" y="-844" width="639" height="486" key="find.popup" timestamp="1585585359449">
+    <state x="367" y="-844" width="1056" height="643" key="find.popup" timestamp="1585665531536">
       <screen x="-273" y="-1057" width="1920" height="1057" />
     </state>
-    <state x="367" y="-844" width="639" height="486" key="find.popup/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585585359449" />
+    <state x="367" y="-844" width="1056" height="643" key="find.popup/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585665531536" />
     <state x="352" y="-822" width="670" height="676" key="search.everywhere.popup" timestamp="1585500139450">
       <screen x="-273" y="-1057" width="1920" height="1057" />
     </state>
     <state x="352" y="-822" width="670" height="676" key="search.everywhere.popup/0.23.1440.823/-273.-1057.1920.1057@-273.-1057.1920.1057" timestamp="1585500139450" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/cemthecebi/domain/service/UserService.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

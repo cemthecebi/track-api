@@ -16,7 +16,7 @@ public class UserRegisterResponseMapper extends Response {
 
     public UserRegisterResponse map(User user) {
         UserRegisterResponse userRegisterResponse = new UserRegisterResponse();
-        userRegisterResponse.setJwtToken(jwtTokenProvider.createToken(user.getUserName(), user.getRoles()));
+        userRegisterResponse.setJwtToken(jwtTokenProvider.createToken(user.getEmail(), user.getRoles()));
         userRegisterResponse.setStatus("OK");
         return userRegisterResponse;
     }
