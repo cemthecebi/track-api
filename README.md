@@ -1,5 +1,9 @@
 # track-api
 
+## User Login
+
+### Request
+
 ```http://localhost:8080/users/register Request```
 ```json
 {
@@ -12,6 +16,8 @@
 }
 ```
 ```http://localhost:8080/users/register Response```
+
+### Response
 ```json
 {
     "status": "OK",
