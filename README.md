@@ -15,7 +15,6 @@
 	"gsmNumber": "05012093961"
 }
 ```
-```http://localhost:8080/users/register```
 
 ### Response
 ```json
