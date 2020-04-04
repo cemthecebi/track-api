@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component
-public class RetrieveCategoriesResponseMapper extends Response {
+public class RetrieveCategoryListResponseMapper extends Response {
 
     public RetrieveCategoriesResponse map(List<CategoryVo> categoryVoList) {
         RetrieveCategoriesResponse retrieveCategoriesResponse = new RetrieveCategoriesResponse();

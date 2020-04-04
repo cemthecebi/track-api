@@ -1,6 +1,6 @@
 package cemthecebi.domain.service;
 
-import cemthecebi.application.model.mapper.RetrieveCategoriesResponseMapper;
+import cemthecebi.application.model.mapper.RetrieveCategoryListResponseMapper;
 import cemthecebi.application.model.response.RetrieveCategoriesResponse;
 import cemthecebi.domain.entity.Category;
 import cemthecebi.domain.model.converter.CategoryListToCategoryVoList;
@@ -18,16 +18,16 @@ public class CategoriesService {
     private final JwtTokenProvider jwtTokenProvider;
     private final CategoryRepository categoryRepository;
     private final CategoryListToCategoryVoList categoryListToCategoryVoList;
-    private final RetrieveCategoriesResponseMapper retrieveCategoriesResponseMapper;
+    private final RetrieveCategoryListResponseMapper retrieveCategoryListResponseMapper;
 
     public CategoriesService(JwtTokenProvider jwtTokenProvider,
                              CategoryRepository categoryRepository,
                              CategoryListToCategoryVoList categoryListToCategoryVoList,
-                             RetrieveCategoriesResponseMapper retrieveCategoriesResponseMapper) {
+                             RetrieveCategoryListResponseMapper retrieveCategoryListResponseMapper) {
         this.jwtTokenProvider = jwtTokenProvider;
         this.categoryRepository = categoryRepository;
         this.categoryListToCategoryVoList = categoryListToCategoryVoList;
-        this.retrieveCategoriesResponseMapper = retrieveCategoriesResponseMapper;
+        this.retrieveCategoryListResponseMapper = retrieveCategoryListResponseMapper;
     }
 
     public RetrieveCategoriesResponse retrieve(HttpServletRequest httpServletRequest) {
@@ -37,6 +37,6 @@ public class CategoriesService {
         //jwtTokenProvider.getEmail(token);
         List<Category> categoryList = categoryRepository.findAll();
         List<CategoryVo> categoryVoList = categoryListToCategoryVoList.convertToList(categoryList);
-        return retrieveCategoriesResponseMapper.map(categoryVoList);
+        return retrieveCategoryListResponseMapper.map(categoryVoList);
     }
 }
