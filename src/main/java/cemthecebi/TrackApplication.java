@@ -2,9 +2,12 @@ package cemthecebi;
 
 import cemthecebi.application.model.request.UserRegisterRequest;
 import cemthecebi.domain.entity.Category;
+import cemthecebi.domain.entity.TvShow;
 import cemthecebi.domain.model.enumtype.Role;
 import cemthecebi.domain.model.enumtype.Status;
+import cemthecebi.domain.model.enumtype.TVShowStatus;
 import cemthecebi.domain.repository.CategoryRepository;
+import cemthecebi.domain.repository.TvShowRepository;
 import cemthecebi.domain.service.UserService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +16,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -27,6 +31,9 @@ public class TrackApplication implements CommandLineRunner {
 
     @Autowired
     CategoryRepository categoryRepository;
+
+    @Autowired
+    TvShowRepository tvShowRepository;
 
     public static void main(String[] args) {
         SpringApplication.run(TrackApplication.class, args);
@@ -44,7 +51,69 @@ public class TrackApplication implements CommandLineRunner {
         LocalDateTime localDateTime = LocalDateTime.now();
         addUsers();
         addCategories(dateTimeFormatter, localDateTime);
+        addMovies(dateTimeFormatter, localDateTime);
+    }
 
+    private void addMovies(DateTimeFormatter dateTimeFormatter, LocalDateTime localDateTime) {
+        TvShow gameOfThrones = new TvShow();
+        gameOfThrones.setCreateDate(dateTimeFormatter.format(localDateTime));
+        gameOfThrones.setStatus(Status.ACTIVE.name());
+        gameOfThrones.setImageLink("https://m.media-amazon.com/images/M/MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_SY1000_CR0,0,734,1000_AL_.jpg");
+        gameOfThrones.setTvShowStatus(TVShowStatus.ENDED);
+        gameOfThrones.setTitle("Game of Thrones");
+        gameOfThrones.setStartDate("2011");
+        gameOfThrones.setEndDate("2019");
+        gameOfThrones.setDescription("Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.\n");
+        gameOfThrones.setCountry("USA");
+        gameOfThrones.setLanguage("English");
+        gameOfThrones.setEpisodeCount(BigDecimal.valueOf(73));
+        gameOfThrones.setSeasonCount(BigDecimal.valueOf(8));
+        gameOfThrones.setAverageEpisodeLength(BigDecimal.valueOf(60));
+        gameOfThrones.setViewCount(BigDecimal.valueOf(870));
+        gameOfThrones.setFollowCount(BigDecimal.valueOf(1000));
+        gameOfThrones.setLikeCount(BigDecimal.valueOf(750));
+        gameOfThrones.setDislikeCount(BigDecimal.valueOf(10));
+        tvShowRepository.save(gameOfThrones);
+
+        TvShow sonsOfAnarchy = new TvShow();
+        sonsOfAnarchy.setCreateDate(dateTimeFormatter.format(localDateTime));
+        sonsOfAnarchy.setStatus(Status.ACTIVE.name());
+        sonsOfAnarchy.setImageLink("https://m.media-amazon.com/images/M/MV5BMTEyODg2NzkwMDBeQTJeQWpwZ15BbWU4MDQwODI3MzIx._V1_.jpg");
+        sonsOfAnarchy.setTvShowStatus(TVShowStatus.ENDED);
+        sonsOfAnarchy.setTitle("Sons of Anarchy");
+        sonsOfAnarchy.setStartDate("2008");
+        sonsOfAnarchy.setEndDate("2014");
+        sonsOfAnarchy.setDescription("A biker struggles to balance being a father and being involved in an outlaw motorcycle club.\n");
+        sonsOfAnarchy.setCountry("USA");
+        sonsOfAnarchy.setLanguage("English");
+        sonsOfAnarchy.setEpisodeCount(BigDecimal.valueOf(92));
+        sonsOfAnarchy.setSeasonCount(BigDecimal.valueOf(7));
+        sonsOfAnarchy.setAverageEpisodeLength(BigDecimal.valueOf(45));
+        sonsOfAnarchy.setViewCount(BigDecimal.valueOf(934));
+        sonsOfAnarchy.setFollowCount(BigDecimal.valueOf(1345));
+        sonsOfAnarchy.setLikeCount(BigDecimal.valueOf(1000));
+        sonsOfAnarchy.setDislikeCount(BigDecimal.valueOf(2));
+        tvShowRepository.save(sonsOfAnarchy);
+
+        TvShow dexter = new TvShow();
+        dexter.setCreateDate(dateTimeFormatter.format(localDateTime));
+        dexter.setStatus(Status.ACTIVE.name());
+        dexter.setImageLink("https://m.media-amazon.com/images/M/MV5BMTM5MjkwMTI0MV5BMl5BanBnXkFtZTcwODQwMTc0OQ@@._V1_.jpg");
+        dexter.setTvShowStatus(TVShowStatus.ENDED);
+        dexter.setTitle("Dexter");
+        dexter.setStartDate("2006");
+        dexter.setEndDate("2013");
+        dexter.setDescription("By day, mild-mannered Dexter is a blood-spatter analyst for the Miami police. But at night, he is a serial killer who only targets other murderers.");
+        dexter.setCountry("USA");
+        dexter.setLanguage("English");
+        dexter.setEpisodeCount(BigDecimal.valueOf(96));
+        dexter.setSeasonCount(BigDecimal.valueOf(8));
+        dexter.setAverageEpisodeLength(BigDecimal.valueOf(50));
+        dexter.setViewCount(BigDecimal.valueOf(500));
+        dexter.setFollowCount(BigDecimal.valueOf(356));
+        dexter.setLikeCount(BigDecimal.valueOf(803));
+        dexter.setDislikeCount(BigDecimal.valueOf(300));
+        tvShowRepository.save(dexter);
     }
 
     private void addCategories(DateTimeFormatter dateTimeFormatter, LocalDateTime localDateTime) {

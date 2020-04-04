@@ -76,6 +76,34 @@
         }
     ]
 }
+```
+
+## Retrieve Movies For HomePage
+
+### GET Request
+**URL:**
+``` http://localhost:8080/tvshow/all```
+
+### Response
+```json
+{
+    "status": "OK",
+    "homePageTvShowVoList": [
+        {
+            "imageLink": "https://m.media-amazon.com/images/M/MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_SY1000_CR0,0,734,1000_AL_.jpg",
+            "title": "Game of Thrones"
+        },
+        {
+            "imageLink": "https://m.media-amazon.com/images/M/MV5BMTEyODg2NzkwMDBeQTJeQWpwZ15BbWU4MDQwODI3MzIx._V1_.jpg",
+            "title": "Sons of Anarchy"
+        },
+        {
+            "imageLink": "https://m.media-amazon.com/images/M/MV5BMTM5MjkwMTI0MV5BMl5BanBnXkFtZTcwODQwMTc0OQ@@._V1_.jpg",
+            "title": "Dexter"
+        }
+    ]
+}
+```
 
 
 
