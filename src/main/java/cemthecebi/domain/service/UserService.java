@@ -71,7 +71,7 @@ public class UserService {
 //    }
 //
 //    public User whoami(HttpServletRequest req) {
-//        return userRepository.findByUserName(jwtTokenProvider.getEmail(jwtTokenProvider.resolveToken(req)));
+//        return userRepository.findByUserName(jwtTokenProvirder.getEmail(jwtTokenProvider.resolveToken(req)));
 //    }
 //
 //    public String refresh(String username) {
