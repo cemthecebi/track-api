@@ -84,7 +84,7 @@
 **URL:**
 ``` http://localhost:8080/tvshow/all```
 
-### Response
+### Responsee
 ```json
 {
     "status": "OK",
