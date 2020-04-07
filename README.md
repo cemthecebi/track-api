@@ -1,5 +1,7 @@
 # track-api
 
+[![Build Status](https://travis-ci.com/cemthecebi/track-api.svg?token=888a1otqj2xSp8fCqbwp&branch=master)](https://travis-ci.com/cemthecebi/track-api)
+
 ## User Register
 
 ### POST Request
